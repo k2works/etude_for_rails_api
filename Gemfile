@@ -46,3 +46,15 @@ group :development, :test do
 end
 
 gem 'autodoc', group: :test
+
+group :development do
+  gem 'etude_for_ops', git: 'https://github.com/k2works/etude_for_ops.git', branch: 'feature/aws_ruby_staging'
+end
+
+# crontab管理
+gem 'whenever', require: false
+
+# Sidekiq
+gem 'sidekiq'
+gem 'sinatra', require: false
+gem 'redis-namespace'
