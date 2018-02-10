@@ -1,0 +1,7 @@
+FROM app:dev
+
+COPY . $APP_ROOT
+RUN $APP_ROOT/bin/rails db:environment:set RAILS_ENV=test
+RUN RAILS_ENV=test $APP_ROOT/bin/rake db:test:prepare
+RUN $APP_ROOT/bin/rspec
+RUN $APP_ROOT/bin/rails test
