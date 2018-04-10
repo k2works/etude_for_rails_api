@@ -50,7 +50,7 @@ end
 gem 'autodoc', group: :test
 
 group :development do
-  gem 'etude_for_ops', git: 'https://github.com/k2works/etude_for_ops.git', branch: 'feature/aws_ruby_staging'
+  gem 'etude_for_ops', git: 'https://github.com/k2works/etude_for_ops.git', branch: 'develop'
 end
 
 # crontab管理
